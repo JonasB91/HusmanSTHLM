@@ -6,7 +6,26 @@
     <title>Contact Us</title>
 </head>
 <body>
-    <h1>här ska allt som rör sig om hemsidans kontakt info vara</h1>
+    <!-- Navigationbar Container som hämtas med en javascript fetch - den hämtar navbar.html -->
+    <div id="navbar-container"></div>
+    
+        <!-- HÄR UNDER SKA NÄSTA MAIN CONTENT VARA! -->
+
+
+
+
+    
+<script>
+    function includeNavbar() {
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+        });
+    }
+    // Call the function to include the navbar
+    includeNavbar();
+</script>
     
 </body>
 </html>

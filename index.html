@@ -10,23 +10,22 @@
     <link rel="stylesheet" href="/Css/style.css">
 </head>
 <body>
-    <header>
-            <!-- NavigationBaren-->
-            <div class="navbar">
+    <!-- Navigationbar Container som hämtas med en javascript fetch - den hämtar navbar.html -->
+    <div id="navbar-container"></div>
 
-                <!-- Hemsidans Header i navigationbaren -->
-                <div class="logo"><h1>Husman Sthlm</h1></div>
+    <!-- HÄR UNDER SKA NÄSTA MAIN CONTENT VARA! -->
 
-                <!-- Länkarna för olika sidorna -->
-                <ul class="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                  </ul>
-            </div>
-        
-        
-    </header>   
+
+    <script>
+        function includeNavbar() {
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+            });
+        }
+        // Call the function to include the navbar
+        includeNavbar();
+    </script>
 </body>
 </html>
