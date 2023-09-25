@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: beige;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2vh;
+    padding: 20px;
+    padding-top: 20vh;
+    margin-left: 5vw;
+}
+
+.box {
+    background-color: rgb(124, 129, 129);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    height: 20vh;
+    width: 25vw;
+    border-radius: 10px;
+    
+}
+
+.allergi-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    font-size: 16px;
+    color: brown;
+}
