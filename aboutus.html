@@ -5,45 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Css/aboutus.css">
-</head>
-<body>
-    <!-- Navigationbar Container som hämtas med en javascript fetch - den hämtar navbar.html -->
-    <div id="navbar-container"></div>
+    </head>
+    <body>
+        <!-- Navigationbar Container som hämtas med en javascript fetch - den hämtar navbar.html -->
+        <div id="navbar-container"></div>
     
-    <!-- HÄR UNDER SKA NÄSTA MAIN CONTENT VARA! -->
+        <!-- MAIN CONTENT-->
 
-    <div class="text-container">
-        <h1>Husman Stockholm - Lunch för alla!</h1>
-    </div>
+        <div class="text-container">
+            <h1>Husman Stockholm - Lunch för alla!</h1>
+        </div>
 
-    <div class="info-container">
-        <p>
-            Vi på Husman Stockholm erbjuder lunch-buffe <span style="text-decoration: underline;">
+        <div class="info-container">
+            <p>
+                Vi på Husman Stockholm erbjuder lunch-buffe <span style="text-decoration: underline;">
                 Måndag - Fredag mellan 10-14.30</span>
-        </p>
-        <p>Det finns två rätter att välja mellan samt en otroligt fräsch salladsbuffe!</p>
-        
-    </div>
+            </p>
+                <p>Det finns två rätter att välja mellan samt en otroligt fräsch salladsbuffe!</p> 
+        </div>
 
-    <div class="image-container">
-        <img src="/images/foodtable.jpg" alt="Bild på Matbordet">
-    </div>
-    <p id="välkomna">Varmt välkomna till oss!</p>
+        <div class="image-container">
+            <img src="/images/foodtable.jpg" alt="Bild på Matbordet">
+        </div>
+            <p id="välkomna">Varmt välkomna till oss!</p>
 
-
-<script>
-    function includeNavbar() {
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById('navbar-container').innerHTML = data;
+        <!-- Funktion som fetchar navigationsbaren  -->
+    <script>
+        function includeNavbar() {
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
         });
-    }
-    // Call the function to include the navbar
-    includeNavbar();
-</script> 
-</body>
+        }
+        
+        includeNavbar();
+    </script> 
+    </body>
 </html>
