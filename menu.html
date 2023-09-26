@@ -4,27 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Css/menu.css">
 </head>
 <body>
     <!-- Navigationbar Container som hämtas med en javascript fetch - den hämtar navbar.html -->
+    <!-- För att inte upprepa navbarens html kod i varje html fil så använder vi ett script för detta -->
     <div id="navbar-container"></div>
+
+    <div class="meny-container">
+        <img src="/images/LUNCHMENY.jpg" alt="Bild på Menyn">
+    </div>
     
-    <!-- HÄR UNDER SKA NÄSTA MAIN CONTENT VARA! -->
+    <!-- MAIN CONTENT MENY GRID LAYOUT FÖR MENYERNA  -->
+        <div class="grid-container">
+            <div class="box">
+                <h1>Måndag</h1>
+                <p>Köttbullar med mos</p>
+                <p>Köttfärssås med spagetti</p>
+            </div>
+
+            <div class="box">
+                <h1>Tisdag</h1>
+                <p>Fiskbullar med mos</p>
+                <p>Torsk med remoladsås</p>
+            </div>
+
+            <div class="box">
+                <h1>Onsdag</h1>
+                <p>Högrevsgryta med potatis</p>
+                <p>Raggmunk med fläsk och rårörda lingon</p>
+            </div>
+
+            <div class="box">
+                <h1>Torsdag</h1>
+                <p>Pannkakor med sylt</p>
+                <p>Ärtsoppa med en klick senap och fläsk</p>
+            </div>
+
+            <div class="box">
+                <h1>Fredag</h1>
+                <p>Schnitzel med rödvinssås och potatis</p>
+            </div>
+
+            <div class="box">
+                <h1>Alla Dagar</h1>
+                <p>Vegetarisk gryta med linser och bönor</p>
+            </div>
+        </div>
+
+        <div class="allergi-container">
+            <h1>Om ni har allergier, Prata med personalen - Så hjälper vi er</h1>
+        </div>
+            <!-- Nästa Section för vidare layout menysidan -->
 
 
-
-    
-<script>
-    function includeNavbar() {
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById('navbar-container').innerHTML = data;
-        });
-    }
-    // Call the function to include the navbar
-    includeNavbar();
-</script>
+            <!-- Funktion som fetchar navigationsbaren  -->
+            <script>
+                function includeNavbar() {
+                fetch('navbar.html')
+                    .then(response => response.text())
+                    .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                });
+                }
+                
+                includeNavbar();
+            </script> 
     
 </body>
 </html>
