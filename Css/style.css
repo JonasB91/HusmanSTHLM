@@ -1,1 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-image: url(/hus.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden;
+    
+}
+
+
+.telefon p {
+    margin-right: 44vw;
+    font-size: 20px;
+    font-size: 32px;
+
+}
+
+
+.telefon {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    padding-top: 85vh;
+    padding-right: 13vw;
+
+
+
+}
+
+.telefon i {
+    font-size: 32px;
+    margin-right: 1.5vw;
+    margin-top: 0.4vw;
+    color: green;
+    
+    
+}
