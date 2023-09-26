@@ -29,6 +29,10 @@ body {
     
 }
 
+.box p {
+    color:#fff
+}
+
 .allergi-container {
     display: flex;
     justify-content: center;
@@ -36,3 +40,18 @@ body {
     font-size: 16px;
     color: brown;
 }
+
+.meny-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10vh;
+    padding-left: 8vw;
+    
+
+}
+
+.meny-container img {
+    width: 35%;
+    height: 35%;
+}
+
