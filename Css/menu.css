@@ -50,8 +50,8 @@ body {
 .meny-container {
     display: flex;
     justify-content: flex-start;
-    padding-left: 15vw;
-    padding-top: 20vh;
+    padding-left: 10vw;
+    padding-top: 10vh;
 
 }
 
@@ -135,8 +135,12 @@ body {
   .sidetext {
     display: flex;
     justify-content: center;
-    margin-left: 20vw;
-    padding-top: 35vh;
+    margin-left: 10vw;
+    padding-top: 20vh;
+    width: 49vw;
+    height: 28vh;
+    
+
     
     
     
@@ -144,8 +148,9 @@ body {
   .sidetext p {
     color: white;
     font-size: 22px;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(10px);
     align-items: center;
+    border-radius: 10px;
   }
 
 

@@ -11,15 +11,15 @@ body {
     width: 100%;
     background-position: center;
     overflow: hidden;
-    
-    
+
 }
 
 
 .telefon p {
-    margin-right: 42vw;
-    font-size: 20px;
-    font-size: 32px;
+    margin-right: 40vw;
+    font-size: 28px;
+    padding-top: 1%;
+    padding-left: 2vw;
 
 }
 
@@ -29,8 +29,9 @@ body {
     color: white;
     display: flex;
     justify-content: center;
-    padding-top: 17vh;
-    padding-right: 5vh;
+    padding-top: 5%;
+    padding-right: 6vh;
+
     
 
 
@@ -38,7 +39,7 @@ body {
 }
 
 .telefon i {
-    font-size: 32px;
+    font-size: 22px;
     margin-right: 1.5vw;
     margin-top: 1vw; /* korrigera efter behov */
     color: green;
@@ -56,5 +57,5 @@ font-size: 20px;
 
 #bowl { /* ändra lite på den så du anpassar den */
     padding-top: 5vh;
-    padding-left: 4vw;
+    padding-left: 40%;
 }
