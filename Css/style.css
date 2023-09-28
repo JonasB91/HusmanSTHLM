@@ -8,27 +8,30 @@ body {
     background-image: url(/hus.jpg);
     background-size: cover;
     height: 100vh;
+    width: 100%;
     background-position: center;
     overflow: hidden;
+    
     
 }
 
 
 .telefon p {
-    margin-right: 44vw;
+    margin-right: 42vw;
     font-size: 20px;
     font-size: 32px;
 
 }
 
 
-.telefon {
+.telefon { /* Ändra den så att den blir mer centrerad */
     font-size: 20px;
     color: white;
     display: flex;
-    justify-content: end;
-    padding-top: 85vh;
-    padding-right: 13vw;
+    justify-content: center;
+    padding-top: 17vh;
+    padding-right: 5vh;
+    
 
 
 
@@ -37,8 +40,21 @@ body {
 .telefon i {
     font-size: 32px;
     margin-right: 1.5vw;
-    margin-top: 0.4vw;
+    margin-top: 1vw; /* korrigera efter behov */
     color: green;
     
     
+}
+.tider {
+display: flex;
+justify-content: center;
+padding-top: 60vh;
+align-items: center;
+color: white;
+font-size: 20px;
+}
+
+#bowl { /* ändra lite på den så du anpassar den */
+    padding-top: 5vh;
+    padding-left: 4vw;
 }

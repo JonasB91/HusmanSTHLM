@@ -9,48 +9,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <!-- Navigationbar Container som hämtas med en javascript fetch - den hämtar navbar.html -->
     <div id="navbar-container"></div>
-    
-        <!-- HÄR UNDER SKA NÄSTA MAIN CONTENT VARA! -->
+
+<!-- ... din navigationskod här ... -->
 
 <!-- contact section start -->
 <div class="contact-session">
     <div class="contact-info">
-    <div><i class="fa-solid fa-location-dot"></i>Adress, City, Country</div>
-    <div><i class="fa-solid fa-envelope"></i>contact@email.com</div>
-    <div><i class="fa-solid fa-phone"></i>+46 73999999</div>
-    <div><i class="fa-solid fa-clock"></i>Mån - Fre 10 - 14:30</div>
+        <div><i class="fa-solid fa-location-dot"></i>Adress, City, Country</div>
+        <div><i class="fa-solid fa-envelope"></i>contact@email.com</div>
+        <div><i class="fa-solid fa-phone"></i>+46 73999999</div>
+        <div><i class="fa-solid fa-clock"></i>Mån - Fre 10 - 14:30</div>
     </div>
     
     <div class="contact-form">
-    
-    <h2> Contact Us</h2>
-    <form class="contact" action="" method="post">
-    <input type="text" name="name" class="text-box" placeholder="Your Name" required>
-    <input type="email" name="email" class="text-box" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <input type="submit" name="submit" class="send-btn" value="Send"> 
-    </form>
+        <h2> Contact Us</h2>
+        <form class="contact" action="#" method="post" onsubmit="return handleSubmit(this);"> <!--  -->
+            <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+            <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" name="submit" class="send-btn" value="Send"> 
+        </form>
     </div>
-    </div>
+</div>
+<!-- contact section end -->
 
-    <!-- contact section end -->
+<script>
+    function handleSubmit(form) {
+        alert("Tack vi kommer att kontakta dig"); /* Visa ett meddelande, vi kan välja att ta bort den sen */ 
+        form.reset(); /* Tillagt att den reset/refresh formuläret */
+        return false; /* Förhindrat att datan skickas någonstans */
+    }
+</script>
 
-        <!-- Funktion som fetchar navigationsbaren  -->
-    <script>
-        function includeNavbar() {
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-            document.getElementById('navbar-container').innerHTML = data;
-        });
-        }
-        
-        includeNavbar();
-    </script> 
+<!-- ... Jag la navbaren här. -->
+<script>
+    function includeNavbar() {
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+    });
+    }
     
+    includeNavbar();
+</script> 
+
+<!-- ... din navigationslänkande JavaScript här ... -->
+
 </body>
 </html>
-
-<!-- Testar för att fixa konflikt i detta -->

@@ -22,7 +22,7 @@ body {
 }
 
 .contact-info{
-  color: blue;
+  color: white; /* bytt färg men vi kan korrigera det sen för husmans bilden går inte ihop med css:en */
   max-width: 500px;
   line-height: 65px;
   padding-left: 50px;
@@ -47,7 +47,7 @@ body {
 }
 
 .contact-form{
-  color: blue;
+  color: white; /* bytt färg */
   text-align: center;
   font-size: 35px;
   text-transform: uppercase;
@@ -56,7 +56,7 @@ body {
 
 .contact-form .text-box{
   background: #fff;
-  color: #fff;
+  color: grey; /* Ändrade färgen den va vit inann*/
   border: none;
   width: calc(50% - 10px);
   height: 50px;
@@ -74,7 +74,7 @@ body {
 
 .contact-form textarea{
   background: #fff;
-  color: #000;
+  color: grey;
   border: none;
   width: 100%;
   padding: 12px;
@@ -90,7 +90,7 @@ body {
 
 .contact-form .send-btn{
   float: right;
-  background: turquoise;
+  background: white; /* bytte färg */
   color: #fff;
   border: none;
   width: 120px;
