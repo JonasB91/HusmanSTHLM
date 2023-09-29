@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+     crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -16,19 +22,19 @@
 <!-- contact section start -->
 <div class="contact-session">
     <div class="contact-info">
-        <div><i class="fa-solid fa-location-dot"></i>Adress, City, Country</div>
-        <div><i class="fa-solid fa-envelope"></i>contact@email.com</div>
+        <div><i class="fa-solid fa-location-dot"></i>Isafjordsgatan 30A</div>
+        <div><i class="fa-solid fa-envelope"></i>HusmanSthlm@telia.se</div>
         <div><i class="fa-solid fa-phone"></i>+46 73999999</div>
-        <div><i class="fa-solid fa-clock"></i>Mån - Fre 10 - 14:30</div>
+        <div><i class="fa-solid fa-clock"></i>Mån - Fre 10 - 15.00</div>
     </div>
     
     <div class="contact-form">
-        <h2> Contact Us</h2>
-        <form class="contact" action="#" method="post" onsubmit="return handleSubmit(this);"> <!--  -->
-            <input type="text" name="name" class="text-box" placeholder="Your Name" required>
-            <input type="email" name="email" class="text-box" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <input type="submit" name="submit" class="send-btn" value="Send"> 
+        <h2> Kontakta oss</h2>
+        <form class="contact" action="#" method="post" onsubmit="return handleSubmit(this);">
+            <input type="text" name="name" class="text-box" placeholder="Fullstängt namn" required>
+            <input type="email" name="email" class="text-box" placeholder="E-post" required>
+            <textarea name="message" rows="5" placeholder="Meddelande" required></textarea>
+            <input type="submit" name="submit" class="send-btn" value="Skicka"> 
         </form>
     </div>
 </div>

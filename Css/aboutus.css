@@ -8,8 +8,10 @@
 
 body {
     
-    background-image: url(/images/Menubakgrund.jpg);
+    background-image: url(/images/aboutusss.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     
@@ -32,15 +34,34 @@ body {
     align-items: center;
     flex-direction: column;
     font-size: 16px;
-    backdrop-filter: blur(50px);
+    width: 50%;
+    margin-left: 24vw;
+    height: 18%;
+    padding-bottom: 4vh;
+    border-radius: 10px;
     
 }
 .info-container p {
     font-size: 22px;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    text-align: center;
+    
+    
 }
 
+@media (max-width: 700px) {
+    #text-one {
+        display: flex;
+        justify-content: center;
+        padding-top: 60vh;
+    }
+    #text-two {
+        display: flex;
+        justify-content: center;
+        padding-top: 10vh;
+    }
+}
 
 #välkomna {
     font-size: 25px;
