@@ -192,6 +192,7 @@ body {
       justify-content: center;
       flex-direction: row;
       align-items: center;
+      text-align: center;
       width: 100%;
       margin-right: 43vw;
     }
@@ -203,6 +204,15 @@ body {
       font-size: 22px;
       align-items: center;
       margin-right: 10vw;
+      padding-top: 5vh;
+    }
+
+    .telefon {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      padding-top: 5vh;
+
     }
   }
 
