@@ -2,6 +2,8 @@
     font-family: 'Playfair Display', serif;
 }
 
+/* Navbar custom style css */
+
 .transparent-navbar {
     background-color: transparent !important;
     box-shadow: none;

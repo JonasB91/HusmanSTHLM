@@ -20,25 +20,26 @@ body {
 /* allt som rör textens info om restaurangen och öppettider*/
 .text-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 10vw;
     padding-top: 10vh;
     font-size: 25px;
     font-weight: bold;
     color: white;
+
 }
 
 .info-container {
     display: flex;
-    justify-content: center;
-    padding-top: 6vh;
+    justify-content: flex-start;
+    padding-top: 5vh;
     align-items: center;
     flex-direction: column;
     font-size: 16px;
-    width: 50%;
-    margin-left: 24vw;
-    height: 18%;
-    padding-bottom: 4vh;
-    border-radius: 10px;
+    margin-left: 0;
+    padding-right: 40vw;
+    
+    
     
 }
 .info-container p {
@@ -46,6 +47,7 @@ body {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
+    margin-top: 1vh;
     
     
 }
@@ -54,12 +56,14 @@ body {
     #text-one {
         display: flex;
         justify-content: center;
-        padding-top: 60vh;
+        padding-left: 5vw;
+        
     }
     #text-two {
         display: flex;
         justify-content: center;
-        padding-top: 10vh;
+        padding-top: 5vh;
+        padding-left: 2vw;
     }
 }
 

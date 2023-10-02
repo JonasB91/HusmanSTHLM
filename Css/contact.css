@@ -22,23 +22,25 @@ body {
 }
 
 .contact-info{
-  color: white; /* bytt färg men vi kan korrigera det sen för husmans bilden går inte ihop med css:en */
+  color: white; 
   max-width: 500px;
-  line-height: 65px;
+  line-height: 70px;
   padding-left: 50px;
-  font-size: 18px;
-  padding-top: 18vh;
+  margin-right: 10vw;
+  font-size: 22px;
+  padding-bottom: 10vh;
+  
 }
 
 .contact-info i{
   margin-right: 20px;
-  font-size: 25px;
+  font-size: 16px;
 }
 
 .contact-form{
   max-width: 700px;
   margin-right: 50px;
-  padding-top: 12vh;
+  padding-top: 3vh;
 }
 
 .contact-info, .contact-form{
@@ -47,21 +49,25 @@ body {
 }
 
 .contact-form{
-  color: white; /* bytt färg */
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 20px;
+
+  color: white; 
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 
 .contact-form .text-box{
   background: #fff;
-  color: grey; /* Ändrade färgen den va vit inann*/
+  color: grey; 
   border: none;
   width: calc(50% - 10px);
   height: 50px;
   padding: 12px;
-  font-size: 15px;
+  font-size: 16px;
   border-radius: 5px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0,1);
   margin-bottom: 20px;
@@ -79,7 +85,7 @@ body {
   border: none;
   width: 100%;
   padding: 12px;
-  font-size: 15px;
+  font-size: 16px;
   min-height: 200px;
   max-height: 400px;
   resize: vertical;
@@ -91,14 +97,30 @@ body {
 
 .contact-form .send-btn{
   float: right;
-  background: white; /* bytte färg */
+  background: white;
   color: grey;
   border: none;
   width: 120px;
   height: 40px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 5px;
+}
+
+
+/* Googlemaps image container */
+.googlemaps-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+/* Styling av googlemaps image */
+.googlemaps-container img {
+  height: 30%;
+  width: 80%;
+  border-radius: 10px;
+  
 }
