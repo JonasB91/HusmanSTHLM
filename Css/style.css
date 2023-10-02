@@ -31,11 +31,6 @@ body {
     justify-content: center;
     padding-top: 20vh;
     padding-right: 6vh;
-    
-    
-
-
-
 }
 
 .telefon i {
@@ -43,9 +38,9 @@ body {
     margin-right: 1.5vw;
     margin-top: 0.5vw; /* korrigera efter behov */
     color: green;
-    
-    
 }
+
+
 .tider {
 display: flex;
 justify-content: center;

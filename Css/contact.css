@@ -22,7 +22,7 @@ body {
 }
 
 .contact-info{
-  color: white; /* bytt färg men vi kan korrigera det sen för husmans bilden går inte ihop med css:en */
+  color: white; 
   max-width: 500px;
   line-height: 70px;
   padding-left: 50px;
@@ -53,7 +53,7 @@ body {
   flex-direction: column-reverse;
   row-gap: 20px;
 
-  color: white; /* bytt färg */
+  color: white; 
   text-align: center;
   font-size: 18px;
   text-transform: uppercase;
@@ -62,7 +62,7 @@ body {
 
 .contact-form .text-box{
   background: #fff;
-  color: grey; /* Ändrade färgen den va vit inann*/
+  color: grey; 
   border: none;
   width: calc(50% - 10px);
   height: 50px;
@@ -97,7 +97,7 @@ body {
 
 .contact-form .send-btn{
   float: right;
-  background: white; /* bytte färg */
+  background: white;
   color: grey;
   border: none;
   width: 120px;
@@ -109,12 +109,15 @@ body {
   border-radius: 5px;
 }
 
+
+/* Googlemaps image container */
 .googlemaps-container {
   display: flex;
   justify-content: center;
   
 }
 
+/* Styling av googlemaps image */
 .googlemaps-container img {
   height: 30%;
   width: 80%;
