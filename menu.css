@@ -101,17 +101,13 @@ body {
     cursor: pointer;
   }
 
-  .pris{
+  .pris {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding-top: 25vh;
-    
-    
-  
-
+    padding-top: 5vh;
   }
-  .pris h1{
+
+  .pris h1 {
     color: white;
     font-size: 40px;
     margin-right: 15vw;
