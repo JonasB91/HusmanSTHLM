@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100;1,100&family=Taviraj:wght@100&display=swap');
+ /* Använder mig av flexbox för att göra den responsiv */
 * {
   margin: 0;
   padding: 0;
@@ -12,115 +13,77 @@ body {
   background-size: cover;
 }
 
-
-
-.contact-session{
-  width: 100%;
+.contact-session {
   display: flex;
+  flex-wrap: wrap; /* lagt wrap för att får att hantera mindre skärmar */
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
-.contact-info{
-  color: white; 
-  max-width: 500px;
-  line-height: 70px;
-  padding-left: 50px;
-  margin-right: 10vw;
-  font-size: 22px;
-  padding-bottom: 10vh;
-  
-}
-
-.contact-info i{
-  margin-right: 20px;
-  font-size: 16px;
-}
-
-.contact-form{
-  max-width: 700px;
-  margin-right: 50px;
-  padding-top: 3vh;
-}
-
-.contact-info, .contact-form{
-  flex: 1;
-
-}
-
-.contact-form{
-  display: flex;
-  flex-direction: column-reverse;
-  row-gap: 20px;
-
-  color: white; 
+.contact-info,
+.contact-form {
+  max-width: 100%;
   text-align: center;
-  font-size: 18px;
+}
+
+.contact-info {
+  color: white;
+  font-size: 18px; /* ändrade font sizen för att få bättre läsbarhet på mindre skärm */
+  line-height: 1.6;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+.contact-form {
+  color: white;
+  font-size: 18px; /* samma som ovan */
   text-transform: uppercase;
-  margin-bottom: 30px;
 }
 
-.contact-form .text-box{
-  background: #fff;
-  color: grey; 
-  border: none;
-  width: calc(50% - 10px);
-  height: 50px;
+.text-box,
+textarea {
+  width: 50%; /*  bredd för text fältet och textområdet */
   padding: 12px;
   font-size: 16px;
-  border-radius: 5px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0,1);
-  margin-bottom: 20px;
-  opacity: 0.9;
-  
-}
-
-.contact-form , .text-box:first-child{
-  margin-right: 15px;
-} 
-
-.contact-form textarea{
-  background: #fff;
-  color: grey;
   border: none;
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  min-height: 200px;
-  max-height: 400px;
-  resize: vertical;
   border-radius: 5px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0,1);
-  margin-bottom: 20px;
-  opacity: 0.9;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form .send-btn{
-  float: right;
+.send-btn {
+  width: 50%;
+  max-width: 100%; /* justera efter känsla maximal bredd för skicka knappen */
+  margin: 0 auto; /* centrerat knappen */
   background: white;
-  color: grey;
+  color: black;
   border: none;
-  width: 120px;
   height: 40px;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 5px;
+  
+  
 }
 
-
-/* Googlemaps image container */
-.googlemaps-container {
+.googlemaps-container { /* image container */
   display: flex;
+  flex-wrap: wrap; /* justera eller alternativt ta bort den */
   justify-content: center;
+  padding-top: 5vh;
+  margin-left: 25vw;
+  width: 50%
   
 }
 
-/* Styling av googlemaps image */
-.googlemaps-container img {
-  height: 30%;
-  width: 80%;
+.googlemaps-container img { /* styling av image container */
+  max-width: 100%; /* anpassat bredden för att vara responsiv */
   border-radius: 10px;
-  
 }
+
