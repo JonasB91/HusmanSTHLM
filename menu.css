@@ -100,6 +100,22 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+
+  .pris{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 25vh;
+    
+    
+  
+
+  }
+  .pris h1{
+    color: white;
+    font-size: 40px;
+    margin-right: 15vw;
+  }
   
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
@@ -138,13 +154,18 @@ body {
 
   /* Telefon nummer container */
   .telefon {
-    padding-top: 3vw;
+    display: flex;
+    justify-content: center;
+    
+    
   }
 
   /*  Styling för telefon nummer h1 element */
   .telefon h1 {
     font-size: 32px;
     color: white;
+    margin-left: 40vw;
+    margin-right: 5vw;
   }
 
 
@@ -190,18 +211,28 @@ body {
       padding-top: 5vh;
     }
 
+
+   
+      
     .telefon {
       display: flex;
       justify-content: center;
-      flex-direction: row;
-      padding-top: 5vh;
-
+      
+      
     }
-  }
-
   
+  
+    .telefon h1 {
+      font-size: 32px;
+      color: white;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+    .pris h1{
+      padding-left: 5vw;
+    }
 
-
+ }
 
 
 
