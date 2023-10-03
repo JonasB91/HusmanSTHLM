@@ -1,7 +1,7 @@
 //Hämta modellen
 var modal = document.getElementById("myModal");
 
-// hämta bilden och lägger in den i modellen 
+// hämtar bilden och lägger in den i modellen 
 var img = document.getElementById("menuImage");
 var modalImg = document.getElementById("myIMG")
 var captionText = document.getElementById("caption")
@@ -12,7 +12,7 @@ img.onclick = function() {
 }
 
 
-//Hämta span element som stänger modellen
+//Hämtar span element som stänger modellen
 var span = document.getElementsByClassName("close")[0];
 
 
