@@ -9,7 +9,7 @@
 
 body {
   min-height: 100vh;
-  background-image: url(images/BG\ STHLM.jpg);
+  background-image: url(pp.jpg);
   background-size: cover;
 }
 
@@ -45,7 +45,7 @@ body {
 
 .text-box,
 textarea {
-  width: 50%; /*  bredd för text fältet och textområdet */
+  width: 55%; /*  bredd för text fältet och textområdet */
   padding: 12px;
   font-size: 16px;
   border: none;
@@ -67,7 +67,7 @@ textarea {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
-  border-radius: 5px;
+  border-radius: 50px;
   
   
 }
