@@ -12,7 +12,6 @@
 .transparent-navbar .navbar-brand {
     font-size: 22px;
     color: rgb(252, 252, 252);
-    
 }
 
 
@@ -21,7 +20,7 @@
     color: white !important;
     
 }
+
 .transparent-navbar .navbar-toggler {
     background-color: white;
-    
 }

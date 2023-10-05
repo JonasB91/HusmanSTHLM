@@ -15,22 +15,18 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+    <!-- Hämtar Navbaren här! -->
     <div id="navbar-container"></div>
 
-<!-- ... din navigationskod här ... -->
-
-<!-- contact section start -->
-<div class="contact-session">
+    <!-- contact section start -->
+    <div class="contact-session">
     <div class="contact-info">
         <h2 id="contact-text"> Kontakta oss via</h2>
         <div><i class="fa-solid fa-location-dot"></i>Isafjordsgatan 30A</div>
         <div><i class="fa-solid fa-envelope"></i>HusmanSthlm@telia.se</div>
         <div><i class="fa-solid fa-phone"></i>+46 73999999</div>
         <div><i class="fa-solid fa-clock"></i>Mån - Fre 10 - 15.00</div>
-        
     </div>
-
-    
 
     <div class="contact-form">
         <form class="contact" action="#" method="post" onsubmit="return handleSubmit(this);">
@@ -39,20 +35,11 @@
             <textarea name="message" rows="5" placeholder="Meddelande" required></textarea>
             <input type="submit" name="submit" class="send-btn" value="Skicka"> 
         </form>
-        
-        
         <div class="googlemaps-container">
-            
             <img class="location" src="images/locationBG.png" alt="Bild på Adress Google Maps">
         </div>
     </div>
 </div>
-
-<!-- Googlemaps img -->
-    
-        
-            
-
 
 <script>
     function handleSubmit(form) {
@@ -62,7 +49,6 @@
     }
 </script>
 
-<!-- ... Jag la navbaren här. -->
 <script>
     function includeNavbar() {
     fetch('navbar.html')
@@ -74,8 +60,5 @@
     
     includeNavbar();
 </script> 
-
-<!-- ... din navigationslänkande JavaScript här ... -->
-
 </body>
 </html>

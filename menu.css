@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 /* Styling av bodyn i html  */
@@ -13,20 +12,17 @@ body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    
-    
 }
 
-/* Meny Container för Bild + text i kolumn */
+/* Meny Container för bild + text i kolumn */
 .meny-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 50vw;
+    margin-left: 45vw;
     align-items: center;
     padding-left: 10vw;
     padding-top: 5vh;
-
 }
 
 /* Popup image */
@@ -34,6 +30,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    
 }
 
 #menuImage:hover { opacity: 0.7;}
@@ -134,8 +131,6 @@ body {
     justify-content: center;
     width: 46%;
     height: 100%;
-    
-    
   }
 
   /* Styling för öppettider texten */
@@ -152,8 +147,6 @@ body {
   .telefon {
     display: flex;
     justify-content: center;
-    
-    
   }
 
   /*  Styling för telefon nummer h1 element */
