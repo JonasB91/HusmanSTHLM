@@ -222,6 +222,23 @@ body {
     }
 
  }
+ @media only screen and (max-width: 1800px) {
+  .pris {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vw; /* justerat efter behov */
+  }
+
+  .pris h1 {
+    color: white;
+    font-size: 40px;
+    margin-right: 8vw;
+    margin-bottom: 20vh;
+  }
+  .telefon{
+    margin-left: 10vw;
+  }
+}
 
 
 
